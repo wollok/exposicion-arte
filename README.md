@@ -23,17 +23,18 @@ Para las pinturas se registra un dato adicional: el nivel de desgaste, que es un
 
 Respecto de la exposición, deben registrarse los artistas que formarán parte del jurado.
 
-Se pide armar un modelo que:
-* permita consultar, dado un artista, si _es influyente_ para la exposición. La condición es que el artista haya sido el maestro de, al menos, uno de los miembros del jurado de la exposición.  
+Se pide armar un modelo que permita:
+* consultar, dado un artista, si _es influyente_ para la exposición. La condición es que el artista haya sido el maestro de, al menos, uno de los miembros del jurado de la exposición.  
 P.ej. si Raúl Soldi está en el jurado, entonces Juan Castagnino es influyente para la exposición.
 
-* permita _registrar el ingreso_ de una obra a la exposición: simplemente, se agrega la obra a una lista de obras que forman parte de la exposición.
+* _registrar el ingreso_ de una obra a la exposición: simplemente, se agrega la obra a una lista de obras que forman parte de la exposición.
 
-* a partir de esto, permita consultar para la exposición: el conjunto de autores de las obras que forman parte, la cantidad de obras de un artista, el artista con más obras, y el conjunto de obras cuyo autor es influyente para la exposición.
+* a partir de esto, averiguar cuáles de las obras que forman parte de la exposición _deben ser restauradas_. Una pintura debe ser restaurada si su desgaste es de 200 puntos o más. Una fotografía nunca debe ser restaurada.
 
-* también, poder consultar si la exposición _es brillante_: la condición es que todas las obras que forman parte de la exposición sean relevantes.
+* consultar si la exposición _es brillante_: la condición es que todas las obras que forman parte de la exposición sean relevantes.
 
-* otra más: consultar cuáles de las obras que forman parte de la exposición _deben ser restauradas_. Una pintura debe ser restaurada si su desgaste es de 200 puntos o más. Una fotografía nunca debe ser restaurada. 
+* adicionalmente, realizar estas consultas respecto de la exposición: el conjunto de autores de las obras que forman parte, la cantidad de obras de un artista, el conjunto de obras cuyo autor es influyente para la exposición, y el artista con más obras en la exposición.
+
 
 Como ejemplo, consideremos estas obras:
 * "Juanito", pintura de Horacio Cóppola, la vieron 20000 personas, su nivel de desgaste es 240. Colores: azul, verde y rojo.
